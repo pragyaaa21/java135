@@ -1,20 +1,13 @@
-public class student {
-    int roll_no;
+abstract class Student
+{
     String name;
-    student()
-    {
-        System.out.print("im a default constructor ");
+    int roll_no;
+
+    public Student(String name, int roll_no) {
+        this.name = name;
+        this.roll_no = roll_no;
     }
-    student(int r,String n){
-        roll_no=r;
-        name=n;
-    }
-    student(student s){
-        roll_no=s.roll_no;
-        name=s.name;
-    }
-    public void display(){
-        System.out.println("Roll No: "+ roll_no);
-        System.out.println("Name: "+ name);
-    }
+
+    abstract void attend_class();
+    abstract void give_exam();
 }
