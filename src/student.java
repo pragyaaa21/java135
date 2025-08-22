@@ -1,13 +1,16 @@
-abstract class Student
-{
-    String name;
-    int roll_no;
+public class student {
+    private String grade;
+    public int roll;
+    public String name;
+    public student(String grade, int roll, String name) {
 
-    public Student(String name, int roll_no) {
-        this.name = name;
-        this.roll_no = roll_no;
+    }
+    public String getGrade() {
+
+        return grade;
     }
 
-    abstract void attend_class();
-    abstract void give_exam();
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 }
