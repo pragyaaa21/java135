@@ -1,3 +1,5 @@
+package unit1;
+
 public class myNewException {
     public static void main(String[] args) {
         userdefinedexception udf=new userdefinedexception();
